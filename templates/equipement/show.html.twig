@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+
+
+<div class="container"> 
+
+
+{# {dump(equipement)}  #}
+    <p>{{ equipement.name }}:  {{ equipement.stock }}</p>
+    <p>Description : {{equipement.description}}</p>
+    <p>Prix: {{equipement.price}}</p>
+    <p>Stock: {{equipement.stock}}</p>
+    <a href="{{ path('equipement') }}"><button class="btn btn-primary">Revenir a l'accueil</button></a></div>
+{% endblock %}

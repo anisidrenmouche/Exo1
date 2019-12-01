@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+  <div class="row paddingBottom20">
+    <div class="container col-4">
+      <div class="row">
+    <h6 class="text-center col-12 mb-0">Ajouter un equipement </h6> <br>{{ form(form) }}
+</div> <br>
+  <a href="{{ path('equipement') }}"><button class="btn btn-primary">Revenir a l'accueil</button></a></div>
+
+{% endblock %}
